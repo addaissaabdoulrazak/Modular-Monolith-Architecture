@@ -15,7 +15,7 @@ namespace Infrastructure.Data.Access
 
         public static string GetConnectionString()
         {
-            return @"Data Source=DESKTOP-VNSUCMM\SQLEXPRESS;Initial Catalog=Test;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+            return @"";
         }
         public static bool GetDebugMode()
         {
