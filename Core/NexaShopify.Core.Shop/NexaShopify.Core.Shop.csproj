@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Handlers\StoreManagement\Categories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.Data\Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.Service\Infrastructure.Service.csproj" />
+    
+    <ProjectReference Include="..\..\Core\NexaShopify.Core.Common\NexaShopify.Core.Common.csproj" />
+    <ProjectReference Include="..\..\Core\NexaShopify.Core.SharedKernel\NexaShopify.Core.SharedKernel.csproj" />
+  </ItemGroup>
+
+</Project>
