@@ -19,14 +19,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\NexaShopify.Core.Common\NexaShopify.Core.Common.csproj" />
+
+    <!--<ProjectReference Include="..\Core\NexaShopify.Core.Common\NexaShopify.Core.Common.csproj" />
     <ProjectReference Include="..\Core\NexaShopify.Core.SharedKernel\NexaShopify.Core.SharedKernel.csproj" />
     <ProjectReference Include="..\Core\NexaShopify.Core.Shop\NexaShopify.Core.Shop.csproj" />
-    <ProjectReference Include="..\Infrastructure\Infrastructure.Service\Infrastructure.Service.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.Service\Infrastructure.Service.csproj" />-->
     <!--<ProjectReference Include="..\..\Core\NexaShopify.Core.Common\NexaShopify.Core.Common.csproj" />
     <ProjectReference Include="..\..\Core\NexaShopify.Core.SharedKernel\NexaShopify.Core.SharedKernel.csproj" />
     <ProjectReference Include="..\..\Core\NexaShopify.Core.Shop\NexaShopify.Core.Shop.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Infrastructure.Service\Infrastructure.Service.csproj" />-->
+
+	  <ProjectReference Include="..\..\Core\NexaShopify.Core.Common\NexaShopify.Core.Common.csproj" />
+	  <ProjectReference Include="..\..\Core\NexaShopify.Core.Identity\NexaShopify.Core.Identity.csproj" />
+	  <ProjectReference Include="..\..\Core\NexaShopify.Core.SharedKernel\NexaShopify.Core.SharedKernel.csproj" />
+	  <ProjectReference Include="..\..\Core\NexaShopify.Core.Shop\NexaShopify.Core.Shop.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\Infrastructure.Service\Infrastructure.Service.csproj" />
   </ItemGroup>
 
 </Project>

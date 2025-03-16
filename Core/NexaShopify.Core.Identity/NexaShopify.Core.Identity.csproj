@@ -11,4 +11,11 @@
     <Folder Include="Handlers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.Data\Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Infrastructure.Service\Infrastructure.Service.csproj" />
+    <ProjectReference Include="..\NexaShopify.Core.Common\NexaShopify.Core.Common.csproj" />
+    <ProjectReference Include="..\NexaShopify.Core.SharedKernel\NexaShopify.Core.SharedKernel.csproj" />
+  </ItemGroup>
+
 </Project>
