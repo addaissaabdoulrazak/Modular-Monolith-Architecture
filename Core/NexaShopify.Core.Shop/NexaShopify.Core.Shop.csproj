@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Handlers\StoreManagement\Categories\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
 
   <ItemGroup>

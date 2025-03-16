@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Search\Controllers\" />
+    <Folder Include="Areas\Settings\Controllers\" />
     <Folder Include="Extensions\" />
   </ItemGroup>
 

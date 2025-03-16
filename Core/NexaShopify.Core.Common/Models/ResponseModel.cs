@@ -33,7 +33,7 @@
                 Body = body
             };
         }
-        public static ResponseModel<T> SuccessResponse(T body, List<string> warnings) //souilmi 22/06/2022
+        public static ResponseModel<T> SuccessResponse(T body, List<string> warnings) 
         {
             return new ResponseModel<T>()
             {

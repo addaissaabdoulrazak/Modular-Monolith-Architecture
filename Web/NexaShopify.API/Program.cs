@@ -5,7 +5,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using NexaShopify.Core.Common.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
-
+using System.Diagnostics;
 namespace NexaShopify.API
 {
     public class Program
@@ -48,6 +48,13 @@ namespace NexaShopify.API
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
+                
+                // Automatically open Swagger after startup
+                   Task.Delay(3000).ContinueWith(_ => 
+                {
+                    var url = "http://localhost:5050/swagger";
+                    Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+                });
             }
 
             app.UseHttpsRedirection();
