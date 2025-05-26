@@ -400,4 +400,4 @@ FodyWeavers.xsd
 *.sln.iml
 
 # data Base Config file 
-Infrastructure/Infrastructure.Data/Access/Settings.cs
+#Infrastructure/Infrastructure.Data/Access/Settings.cs

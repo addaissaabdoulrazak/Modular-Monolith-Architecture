@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NexaShopify.Core.SharedKernel.Interfaces
 {
-    public interface IHandle<TResponse>
+    public interface IHandle<TData, TResponse>
     {
         TResponse Handle();
         TResponse Validate();

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Infrastructure.Data.Entities.Tables.Shop
+namespace Infrastructure.Data.Entities.Tables.Store
 {
     public class ShopEntity
     {

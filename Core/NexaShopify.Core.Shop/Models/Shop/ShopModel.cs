@@ -21,8 +21,8 @@ namespace NexaShopify.Core.Shop.Models.Shop
         }
 
 
-        //Parameterized Constructor
-        public ShopModel(Infrastructure.Data.Entities.Tables.Shop.ShopEntity x )
+        //Parameterized Constructor || EntityToDTO
+        public ShopModel(Infrastructure.Data.Entities.Tables.Store.ShopEntity x )
         {
             description = x.description.ToString();
             logo = x.logo.ToString();
@@ -32,9 +32,9 @@ namespace NexaShopify.Core.Shop.Models.Shop
 
 
       
-        public Infrastructure.Data.Entities.Tables.Shop.ShopEntity ToShopEntity()
+        public Infrastructure.Data.Entities.Tables.Store.ShopEntity ToShopEntity()
         {
-            return new Infrastructure.Data.Entities.Tables.Shop.ShopEntity
+            return new Infrastructure.Data.Entities.Tables.Store.ShopEntity
             {
                 description = this.description.ToString(),
                 email = email.ToString(),

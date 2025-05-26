@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NexaShopify.API.Extensions;
 using NexaShopify.Core.Common.Models;
 using NexaShopify.Core.Shop.Models.Shop;
 using Swashbuckle.AspNetCore.Annotations;
@@ -22,8 +23,10 @@ namespace NexaShopify.API.Areas.Shops.Controllers
             try
             {
                
-                var response = new Core.Shop.Handlers.StoreManagement.Shop.GetAllShopHandler().Handle();
-                return Ok(response);
+               
+               // var response = new Core.Shop.Handlers.StoreManagement.Shop.GetAllShopHandler(this.GetCurrentUser()).Handle();
+               // return Ok(response);
+               return Ok(new ShopModel());  
             }
             catch (Exception e)
             {

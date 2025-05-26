@@ -7,10 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NexaShopify.Core.Shop.Handlers.StoreManagement.Shop
+namespace NexaShopify.Core.Store.Handlers.StoreManagement.Shop
 {
-    public class GetAllShopHandler : IHandle<ResponseModel<List<ShopModel>>>
+    public class GetAllShopHandler : IHandle<Identity.Models.UserModel, ResponseModel<List<ShopModel>>>
     {
+
+        private Identity.Models.UserModel _user;
+
+        public GetAllShopHandler(Identity.Models.UserModel user)
+        {
+            _user = user;
+        }
         public ResponseModel<List<ShopModel>> Handle()
         {
 
@@ -23,13 +30,13 @@ namespace NexaShopify.Core.Shop.Handlers.StoreManagement.Shop
                     return validationResponse;
                 }
                 // Get All Shops from DataBase 
-                var storeList = Infrastructure.Data.Access.Tables.Shop.ShopAccess.Get();
+             //   var storeList = Infrastructure.Data.Access.Tables.Store.ShopAccess.Get();
 
                 var response = new List<ShopModel>();
 
-               response = storeList.Select(x => new ShopModel(x)).ToList();
+                //    response = storeList.Select(x => new ShopModel(x)).ToList();
 
-
+                return null;
 
                 return  ResponseModel<List<ShopModel>>.SuccessResponse(response);
             }
@@ -44,8 +51,13 @@ namespace NexaShopify.Core.Shop.Handlers.StoreManagement.Shop
         public ResponseModel<List<ShopModel>> Validate()
         {
             // Logic here 
-            if (Infrastructure.Data.Access.Tables.Shop.ShopAccess.Get() == null)
-                return ResponseModel<List<ShopModel>>.FailureResponse("Shops not found");
+            if (this._user == null /*|| this._user.Roles.*/ )
+            {
+                ResponseModel<List<ShopModel>>.AccessDeniedResponse();
+            }
+
+           // if (ShopAccess.Get() == null)
+             //   return ResponseModel<List<ShopModel>>.FailureResponse("Shops not found");
 
             return ResponseModel<List<ShopModel>>.SuccessResponse();
         }

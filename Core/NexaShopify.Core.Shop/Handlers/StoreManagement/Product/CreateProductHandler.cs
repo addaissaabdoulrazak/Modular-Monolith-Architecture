@@ -1,9 +1,10 @@
 ﻿using NexaShopify.Core.Common.Models;
 using NexaShopify.Core.SharedKernel.Interfaces;
+using System.Security.Principal;
 
 namespace NexaShopify.Core.Shop.Handlers.StoreManagement.Product
 {
-    public class CreateProductHandler : IHandle<ResponseModel<int>>
+    public class CreateProductHandler : IHandle<Identity.Models.UserModel, ResponseModel<int>>
     {
         public ResponseModel<int> Handle()
         {

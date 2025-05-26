@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexaShopify.Core.Identity",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexaShopify.API", "Web\NexaShopify.API\NexaShopify.API.csproj", "{13BA134B-1EE7-478C-9756-C7105D263F68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexaShopify.Core", "Core\NexaShopify.Core\NexaShopify.Core.csproj", "{F380597A-5F4B-4CCF-BE27-406D6AAF1F5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{13BA134B-1EE7-478C-9756-C7105D263F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13BA134B-1EE7-478C-9756-C7105D263F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13BA134B-1EE7-478C-9756-C7105D263F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F380597A-5F4B-4CCF-BE27-406D6AAF1F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F380597A-5F4B-4CCF-BE27-406D6AAF1F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F380597A-5F4B-4CCF-BE27-406D6AAF1F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F380597A-5F4B-4CCF-BE27-406D6AAF1F5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,5 +75,9 @@ Global
 		{01F0C3FE-FE01-4FBB-A095-FCA026F4639B} = {0B7968F2-7703-4E78-91FE-8F484A609CD4}
 		{92513050-B67E-4FB1-B972-ECDD01DB6723} = {0B7968F2-7703-4E78-91FE-8F484A609CD4}
 		{13BA134B-1EE7-478C-9756-C7105D263F68} = {AE7CC792-3BF2-4314-8BA4-993C2FD42CA1}
+		{F380597A-5F4B-4CCF-BE27-406D6AAF1F5A} = {0B7968F2-7703-4E78-91FE-8F484A609CD4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFAEA0B8-FB9B-44B8-A8C4-23A13AABBF2B}
 	EndGlobalSection
 EndGlobal

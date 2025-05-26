@@ -5,7 +5,7 @@ using NexaShopify.Core.Shop.Models.Product;
 
 namespace NexaShopify.Core.Shop.Handlers.StoreManagement.Product
 {
-    public class GetProductHandler : IHandle<ResponseModel<ProductModel>>
+    public class GetProductHandler : IHandle<Identity.Models.UserModel, ResponseModel<ProductModel>>
     {
 
         private int _id { get; set; }
@@ -25,8 +25,12 @@ namespace NexaShopify.Core.Shop.Handlers.StoreManagement.Product
                 {
                     return validationResponse;
                 }
+                 
+                // Get Product by Id
+                  
+                // return response
 
-                return  ResponseModel<ProductModel>.SuccessResponse(/*InsertedLand*/ );
+                return null;
 
 
             }
